@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LexicalResource>
+  <Lexicon>
+    <LexicalEntry>
+      <Lemma><feat att="writtenForm" val="그립다"/></Lemma>
+      <feat att="partOfSpeech" val="형용사"/>
+      <feat att="vocabularyLevel" val="중급"/>
+      <Sense>
+        <feat att="definition" val="보고 싶거나 만나고 싶은 마음이 간절하다."/>
+        <Equivalent><feat att="language" val="영어"/><feat att="lemma" val="to miss; to long for"/></Equivalent>
+        <SenseExample><feat att="type" val="문장"/><feat att="example" val="고향 음식이 그립다."/></SenseExample>
+      </Sense>
+    </LexicalEntry>
+    <LexicalEntry>
+      <Lemma><feat att="writtenForm" val="비슷하다"/></Lemma>
+      <feat att="partOfSpeech" val="형용사"/>
+      <feat att="vocabularyLevel" val="중급"/>
+      <Sense>
+        <feat att="definition" val="둘 이상의 대상이 서로 거의 같다."/>
+        <Equivalent><feat att="language" val="영어"/><feat att="lemma" val="to be similar"/></Equivalent>
+        <SenseExample><feat att="type" val="문장"/><feat att="example" val="두 사람의 성격이 비슷하다."/></SenseExample>
+      </Sense>
+    </LexicalEntry>
+    <LexicalEntry>
+      <Lemma><feat att="writtenForm" val="찾다"/></Lemma>
+      <feat att="partOfSpeech" val="동사"/>
+      <feat att="vocabularyLevel" val="초급"/>
+      <Sense>
+        <feat att="definition" val="원하는 것을 얻거나 만나려고 여기저기를 살피다."/>
+        <Equivalent><feat att="language" val="영어"/><feat att="lemma" val="to look for; to find"/></Equivalent>
+        <SenseExample><feat att="type" val="문장"/><feat att="example" val="식당을 찾고 있어요."/></SenseExample>
+      </Sense>
+    </LexicalEntry>
+    <LexicalEntry>
+      <Lemma><feat att="writtenForm" val="여행"/></Lemma>
+      <feat att="partOfSpeech" val="명사"/>
+      <feat att="vocabularyLevel" val="초급"/>
+      <Sense>
+        <feat att="definition" val="다른 고장이나 외국에 가는 일."/>
+        <Equivalent><feat att="language" val="영어"/><feat att="lemma" val="travel; trip"/></Equivalent>
+        <SenseExample><feat att="type" val="문장"/><feat att="example" val="방학에 여행을 갔어요."/></SenseExample>
+      </Sense>
+    </LexicalEntry>
+    <LexicalEntry>
+      <Lemma><feat att="writtenForm" val="추억"/></Lemma>
+      <feat att="partOfSpeech" val="명사"/>
+      <feat att="vocabularyLevel" val="중급"/>
+      <Sense>
+        <feat att="definition" val="지난 일을 돌이켜 생각함. 또는 그런 생각."/>
+        <Equivalent><feat att="language" val="영어"/><feat att="lemma" val="memory; recollection"/></Equivalent>
+        <SenseExample><feat att="type" val="문장"/><feat att="example" val="어린 시절의 추억이 떠올랐다."/></SenseExample>
+      </Sense>
+    </LexicalEntry>
+    <LexicalEntry>
+      <Lemma><feat att="writtenForm" val="익숙하다"/></Lemma>
+      <feat att="partOfSpeech" val="형용사"/>
+      <feat att="vocabularyLevel" val="중급"/>
+      <Sense>
+        <feat att="definition" val="어떤 일을 여러 번 하여 서투르지 않다."/>
+        <Equivalent><feat att="language" val="영어"/><feat att="lemma" val="to be familiar; to be used to"/></Equivalent>
+        <SenseExample><feat att="type" val="문장"/><feat att="example" val="이제 한국 생활에 익숙하다."/></SenseExample>
+      </Sense>
+    </LexicalEntry>
+    <LexicalEntry>
+      <Lemma><feat att="writtenForm" val="맛집"/></Lemma>
+      <feat att="partOfSpeech" val="명사"/>
+      <feat att="vocabularyLevel" val="중급"/>
+      <Sense>
+        <feat att="definition" val="음식이 맛있기로 유명한 식당."/>
+        <Equivalent><feat att="language" val="영어"/><feat att="lemma" val="a restaurant famous for good food"/></Equivalent>
+        <SenseExample><feat att="type" val="문장"/><feat att="example" val="이 동네 맛집을 검색했어요."/></SenseExample>
+      </Sense>
+    </LexicalEntry>
+    <LexicalEntry>
+      <Lemma><feat att="writtenForm" val="느끼다"/></Lemma>
+      <feat att="partOfSpeech" val="동사"/>
+      <feat att="vocabularyLevel" val="중급"/>
+      <Sense>
+        <feat att="definition" val="감각이나 마음으로 어떤 것을 알아차리다."/>
+        <Equivalent><feat att="language" val="영어"/><feat att="lemma" val="to feel"/></Equivalent>
+        <SenseExample><feat att="type" val="문장"/><feat att="example" val="여행에서 자유를 느꼈어요."/></SenseExample>
+      </Sense>
+    </LexicalEntry>
+    <LexicalEntry>
+      <Lemma><feat att="writtenForm" val="고향"/></Lemma>
+      <feat att="partOfSpeech" val="명사"/>
+      <feat att="vocabularyLevel" val="중급"/>
+      <Sense>
+        <feat att="definition" val="자기가 태어나서 자란 곳."/>
+        <Equivalent><feat att="language" val="영어"/><feat att="lemma" val="hometown"/></Equivalent>
+        <SenseExample><feat att="type" val="문장"/><feat att="example" val="명절에 고향에 내려가요."/></SenseExample>
+      </Sense>
+    </LexicalEntry>
+    <LexicalEntry>
+      <Lemma><feat att="writtenForm" val="먹다"/></Lemma>
+      <feat att="partOfSpeech" val="동사"/>
+      <feat att="vocabularyLevel" val="초급"/>
+      <Sense>
+        <feat att="definition" val="음식을 입에 넣고 삼키다."/>
+        <Equivalent><feat att="language" val="영어"/><feat att="lemma" val="to eat"/></Equivalent>
+        <SenseExample><feat att="type" val="문장"/><feat att="example" val="아침을 먹었어요."/></SenseExample>
+      </Sense>
+    </LexicalEntry>
+  </Lexicon>
+</LexicalResource>

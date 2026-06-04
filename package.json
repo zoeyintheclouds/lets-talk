@@ -8,18 +8,13 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "server": "node server/index.js"
+    "rag": "rag/.venv/bin/uvicorn app:app --app-dir rag --host '::' --port 8000 --reload",
+    "dev:all": "concurrently -n vite,rag -c cyan,magenta \"npm run dev\" \"npm run rag\""
   },
   "dependencies": {
-    "@google/genai": "^2.0.1",
-    "@tanstack/react-query": "^5.100.9",
-    "cors": "^2.8.6",
-    "dotenv": "^17.4.2",
-    "express": "^5.2.1",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "react-router-dom": "^7.15.0",
-    "xlsx": "^0.18.5",
     "zustand": "^5.0.13"
   },
   "devDependencies": {
@@ -29,6 +24,7 @@
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.1",
     "autoprefixer": "^10.5.0",
+    "concurrently": "^9.2.1",
     "eslint": "^10.3.0",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.2",

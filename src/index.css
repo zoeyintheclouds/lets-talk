@@ -6,7 +6,7 @@
 
 @layer base {
   html { -webkit-tap-highlight-color: transparent; }
-  body { @apply bg-sand text-ink font-body antialiased; }
+  body { @apply bg-white text-ink font-body antialiased; }
   * { @apply box-border; }
 }
 

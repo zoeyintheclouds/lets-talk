@@ -9,11 +9,11 @@ export default {
         mono: ['"JetBrains Mono"', 'monospace'],
       },
       colors: {
-        sand:   { DEFAULT: '#f0ebe1', 50: '#faf8f4', 100: '#f0ebe1', 200: '#e0d6c6' },
-        ink:    { DEFAULT: '#1c1917', light: '#44403c', muted: '#78716c' },
+        sand:   { DEFAULT: '#ffffff', 50: '#f0f0f0', 100: '#e8e8e8', 200: '#d0d0d0' },
+        ink:    { DEFAULT: '#1c1917', light: '#3c3836', muted: '#52504d' },
         coral:  { DEFAULT: '#e05a3a', light: '#f07a5a', dark: '#c04a2a' },
         teal:   { DEFAULT: '#2a7c74', light: '#3a9c94', dark: '#1a5c54' },
-        stone:  { DEFAULT: '#d4cfc5', light: '#e8e3d9' },
+        stone:  { DEFAULT: '#c4c4c4', light: '#d8d8d8' },
       },
       animation: {
         'slide-up':   'slideUp 0.45s cubic-bezier(0.22,1,0.36,1) both',

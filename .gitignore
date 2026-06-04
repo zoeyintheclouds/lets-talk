@@ -28,3 +28,14 @@ dist
 .env
 server/.env
 .DS_Store
+
+# Python RAG service
+rag/.venv
+rag/chroma
+rag/data/krdict/*.xml
+rag/data/[0-9]*_*.xml
+rag/.cache
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo

@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import type { Topic, Word, Grammar, TimelineSection, GrammarPattern } from '../types';
+import type { Topic, Word, TimelineSection, GrammarPattern } from '../types';
 
 interface SessionState {
   // Setup
@@ -14,6 +14,10 @@ interface SessionState {
   // Cue questions
   cueQuestions: string[];
   cueAnswers:   string[];
+
+  // Grammar selection (step ③.5)
+  suggestedGrammar: GrammarPattern[];  // 5–6 from /suggest-grammar
+  selectedGrammar:  GrammarPattern[];  // 2–3 the user picks → fed into timeline
 
   // Timeline + grammar (from /api/timeline)
   speechTimeline:  TimelineSection[];
@@ -40,6 +44,8 @@ interface SessionState {
   toggleWord:          (word: Word) => void;
   setCueQuestions:     (qs: string[]) => void;
   setCueAnswers:       (as: string[]) => void;
+  setSuggestedGrammar: (g: GrammarPattern[]) => void;
+  toggleGrammar:       (g: GrammarPattern) => void;
   setTimeline:         (sections: TimelineSection[], grammar: GrammarPattern[]) => void;
   setRecording:        (blob: Blob) => void;
   toggleUsedWord:      (id: string) => void;
@@ -53,7 +59,7 @@ export interface FeedbackData {
   encouragement: string;
   usedSummary:   string;
   missedWords: {
-    id: string; korean: string; english: string; reason: string; example: string;
+    id: string; korean: string; english: string; definition?: string; reason: string; example: string;
   }[];
   missedGrammar: {
     id: string; pattern: string; meaning: string; reason: string; example: string;
@@ -69,6 +75,8 @@ const defaults = {
   selectedWords:    [],
   cueQuestions:     [],
   cueAnswers:       [],
+  suggestedGrammar: [],
+  selectedGrammar:  [],
   speechTimeline:   [],
   grammarPatterns:  [],
   recordingBlob:    null,
@@ -88,11 +96,17 @@ export const useStore = create<SessionState>((set) => ({
   toggleWord: (word) => set((s) => {
     const exists = s.selectedWords.some(w => w.id === word.id);
     if (exists) return { selectedWords: s.selectedWords.filter(w => w.id !== word.id) };
-    if (s.selectedWords.length >= 10) return {};
+    if (s.selectedWords.length >= 20) return {};
     return { selectedWords: [...s.selectedWords, word] };
   }),
   setCueQuestions: (qs) => set({ cueQuestions: qs, cueAnswers: Array(qs.length).fill('') }),
   setCueAnswers:   (as) => set({ cueAnswers: as }),
+  setSuggestedGrammar: (g) => set({ suggestedGrammar: g, selectedGrammar: [] }),
+  toggleGrammar: (g) => set((s) => {
+    const exists = s.selectedGrammar.some(x => x.id === g.id);
+    if (exists) return { selectedGrammar: s.selectedGrammar.filter(x => x.id !== g.id) };
+    return { selectedGrammar: [...s.selectedGrammar, g] };
+  }),
   setTimeline: (sections, grammar) => set({
     speechTimeline: sections,
     grammarPatterns: grammar,
